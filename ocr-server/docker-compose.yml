@@ -1,0 +1,6 @@
+services:
+  ocr-server:
+    container_name: ocr-server
+    image: otiai10/ocrserver
+    ports:
+      - 8080:8080
