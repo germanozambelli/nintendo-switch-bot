@@ -15,4 +15,5 @@ const (
 	CAPTURE        = "CAPTURE"
 	MINUS          = "MINUS"
 	PLUS           = "PLUS"
+	L              = "L"
 )

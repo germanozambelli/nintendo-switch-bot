@@ -17,6 +17,7 @@ const (
 	CAPTURE        = "CAPTURE"
 	MINUS          = "MINUS"
 	PLUS           = "PLUS"
+	L              = "L"
 )
 
 func ConvertToButton(b button.Button) Button {
@@ -45,6 +46,8 @@ func ConvertToButton(b button.Button) Button {
 		return MINUS
 	case button.PLUS:
 		return PLUS
+	case button.L:
+		return L
 	}
 
 	return "unknown"
