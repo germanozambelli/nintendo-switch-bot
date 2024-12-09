@@ -1,4 +1,6 @@
-package pokemon
+package item
+
+import "github.com/germanozambelli/nintendo-switch-bot/switch-bot/pokemon-scarlet/pokemon"
 
 type ItemCategory int
 
@@ -23,24 +25,17 @@ type Item interface {
 	IncreaseQuantity()
 }
 
-type SpellApplicable interface {
-	Item
-	ApplyToSpell(spell *Spell)
-}
-
-type PokemonApplicable interface {
-	Item
-	ApplyToPokemon(pokemon *Pokemon)
-}
-
 type ConsumableItem interface {
 	Item
 	Consume()
 }
 
-type HoldableItemApplied bool
-
-type HoldableItem interface {
+type SpellApplicable interface {
 	Item
-	ApplyHoldingEffect(pokemon *Pokemon) HoldableItemApplied
+	ApplyToSpell(spell *pokemon.Spell)
+}
+
+type PokemonApplicable interface {
+	Item
+	ApplyToPokemon(pokemon *pokemon.Pokemon)
 }

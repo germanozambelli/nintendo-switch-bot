@@ -20,12 +20,12 @@ func (e *EtereMax) Quantity() int {
 	return e.quantity
 }
 
-func (e *EtereMax) Category() pokemon.ItemCategory {
-	return pokemon.REMEDY
+func (e *EtereMax) Category() ItemCategory {
+	return REMEDY
 }
 
-func (e *EtereMax) Effect() pokemon.ItemEffect {
-	return pokemon.PP_UP
+func (e *EtereMax) Effect() ItemEffect {
+	return PP_UP
 }
 
 func (e *EtereMax) ApplyToSpell(spell *pokemon.Spell) {

@@ -24,12 +24,12 @@ func (e *Etere) Quantity() int {
 	return e.quantity
 }
 
-func (e *Etere) Category() pokemon.ItemCategory {
-	return pokemon.REMEDY
+func (e *Etere) Category() ItemCategory {
+	return REMEDY
 }
 
-func (e *Etere) Effect() pokemon.ItemEffect {
-	return pokemon.PP_UP
+func (e *Etere) Effect() ItemEffect {
+	return PP_UP
 }
 
 func (e *Etere) ApplyToSpell(spell *pokemon.Spell) {

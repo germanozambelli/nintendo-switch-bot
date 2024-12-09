@@ -20,12 +20,12 @@ func (e *Elisir) Quantity() int {
 	return e.quantity
 }
 
-func (e *Elisir) Category() pokemon.ItemCategory {
-	return pokemon.REMEDY
+func (e *Elisir) Category() ItemCategory {
+	return REMEDY
 }
 
-func (e *Elisir) Effect() pokemon.ItemEffect {
-	return pokemon.PP_UP
+func (e *Elisir) Effect() ItemEffect {
+	return PP_UP
 }
 
 func (e *Elisir) ApplyToPokemon(pokemon *pokemon.Pokemon) {

@@ -3,12 +3,11 @@ package nxbt_joycon
 import (
 	"bufio"
 	"fmt"
+	"github.com/germanozambelli/nintendo-switch-bot/switch-bot/pkg/joycon/button"
+	"github.com/germanozambelli/nintendo-switch-bot/switch-bot/pkg/joycon/stick"
 	"github.com/germanozambelli/nintendo-switch-bot/switch-bot/pkg/logger"
 	"net"
 	"time"
-
-	"github.com/germanozambelli/nintendo-switch-bot/switch-bot/pkg/player/controller/button"
-	"github.com/germanozambelli/nintendo-switch-bot/switch-bot/pkg/player/controller/stick"
 )
 
 type VirtualJoyCon struct {

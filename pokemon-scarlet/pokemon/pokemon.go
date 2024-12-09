@@ -1,5 +1,12 @@
 package pokemon
 
+type HoldableItemApplied bool
+
+type HoldableItem interface {
+	ApplyHoldingEffect(pokemon *Pokemon) HoldableItemApplied
+	Quantity() int
+}
+
 type Pokemon struct {
 	name   string
 	spells []*Spell
@@ -30,6 +37,12 @@ func (p *Pokemon) SpellBy(name string) (*Spell, int) {
 	}
 
 	return nil, 0
+}
+
+func (p *Pokemon) SpellPosition(spell *Spell) int {
+	_, position := p.SpellBy(spell.name)
+
+	return position
 }
 
 func (p *Pokemon) Spells() []*Spell {

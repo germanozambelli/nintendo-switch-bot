@@ -60,6 +60,10 @@ func (s *Spell) SetPP(quantity int) {
 	s.pp = quantity
 }
 
+func (s *Spell) SameAs(spell *Spell) bool {
+	return s.name == spell.name
+}
+
 func (s *Spell) Name() string {
 	return s.name
 }

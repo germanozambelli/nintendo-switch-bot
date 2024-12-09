@@ -1,6 +1,8 @@
 package item
 
-import "github.com/germanozambelli/nintendo-switch-bot/switch-bot/pokemon-scarlet/pokemon"
+import (
+	"github.com/germanozambelli/nintendo-switch-bot/switch-bot/pokemon-scarlet/pokemon"
+)
 
 type LeppaBerry struct {
 	quantity int
@@ -18,12 +20,12 @@ func (l *LeppaBerry) Quantity() int {
 	return l.quantity
 }
 
-func (l *LeppaBerry) Category() pokemon.ItemCategory {
-	return pokemon.BERRY
+func (l *LeppaBerry) Category() ItemCategory {
+	return BERRY
 }
 
-func (l *LeppaBerry) Effect() pokemon.ItemEffect {
-	return pokemon.PP_UP
+func (l *LeppaBerry) Effect() ItemEffect {
+	return PP_UP
 }
 
 func (l *LeppaBerry) ApplyToSpell(spell *pokemon.Spell) {
